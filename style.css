@@ -1,0 +1,47 @@
+/* This is the class that is ADDED to the image on LINE 13 of your HTML */
+.fly-forward{
+	transform: translate(165px, 0);
+	transition: transform 2s ease;
+}
+
+/* This is the class that is TOGGLED onto the image on LINE 18 of your HTML */
+.power-up {
+	content:url(images/vegeta1.png);
+}
+
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	background-color: #141414;
+	display: flex;
+	font-family: 'Roboto', sans-serif, bold;
+}
+
+img {
+	filter: grayscale(90%);
+	transition: .5s ease-in-out;
+}
+
+img:hover {
+	filter: grayscale(0%);
+	transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: calc(100vw/2);
+}
+
+/* CITATIONS:
+
+1st image of Vegeta: https://vignette.wikia.nocookie.net/leafyishere/images/7/7a/Vegeta1.png/revision/latest?cb=20160929235124
+2nd image of Vegeta: https://img00.deviantart.net/b705/i/2017/244/f/7/limit_breaker_vegeta_by_ruga_rell-dblsga7.png
+Gohan on Nimbus: https://media.giphy.com/media/egtmRUZfUCnNm/giphy.gif
+
+*/

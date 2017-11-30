@@ -1,0 +1,25 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="images/dbz.ico" rel="icon" type="image/x-icon" />
+		<title>DBZ JS Example</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<div class="column">
+			<!-- The 'fly-forward' class is added onto the image below which causes it to move -->
+			<img src="images/gohan.gif" id="nimbus" onclick="flyGohan(this)"/>
+		</div>
+
+		<div class="column">
+			<!-- The image will change because the 'power-up' class is toggled. The image from the 'power-up' class will override the image already loaded below -->
+			<img src="images/vegeta0.png" id="vegeta" onclick="changePicture(this)"/>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+	
+</html>
